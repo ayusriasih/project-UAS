@@ -90,13 +90,6 @@ const RiwayatScreen = ({ navigation }: any) => {
           </Text>
         }
       />
-
-      <Pressable
-        style={styles.addBtn}
-        onPress={() => navigation.navigate("PenitipanCreate")}
-      >
-        <Ionicons name="add" size={28} color="#fff" />
-      </Pressable>
     </View>
   );
 };
@@ -143,17 +136,5 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "#E65100",
     marginTop: 4,
-  },
-  addBtn: {
-    position: "absolute",
-    right: 20,
-    bottom: 20,
-    backgroundColor: "#1982c4",
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    alignItems: "center",
-    justifyContent: "center",
-    elevation: 4,
   },
 });
