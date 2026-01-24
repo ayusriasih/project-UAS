@@ -29,7 +29,6 @@ const PenitipanCreateScreen = () => {
   const [harga, setHarga] = useState("");
   const [status, setStatus] = useState("Pending");
 
-  // 🔥 AUTO ISI DARI KERANJANG
   useEffect(() => {
     if (route.params) {
       setLayanan(route.params.layanan || "");
