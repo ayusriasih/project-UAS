@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
-
-export default function CartScreen({ navigation }: { navigation: any }) {
+export default function CartScreen({ navigation, route }: any) {
+const { cartItems: cartFromHome } = route.params || {};
 
   const cartItems = [
     { id: "1", name: "Grooming Lengkap Anjing", price: 75000 },

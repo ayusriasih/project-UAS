@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./HomeScreen.tsx";
 import NotificationScreen from "./NotificationScreen.tsx";
 import CartScreen from "./CartScreen.tsx";
+import AnimalsSreen from "./AnimalsScreen.tsx";
 import SidebarScreen from "./SidebarScreen.tsx";
 import RiwayatScreen from "./RiwayatScreen.tsx";
 import PenitipanLengkapScreen from "./PenitipanLengkapScreen";
@@ -24,6 +25,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Notification" component={NotificationScreen} />
         <Stack.Screen name="Cart" component={CartScreen} />
+        <Stack.Screen name="Animals" component={AnimalsSreen} />
         <Stack.Screen name="Sidebar" component={SidebarScreen} />
         <Stack.Screen name="Riwayat" component={RiwayatScreen} />
         <Stack.Screen name="PenitipanEdit"component={PenitipanEditScreen} />
